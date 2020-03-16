@@ -90,6 +90,21 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
+        
+        'oracle' => [
+            'driver'         => 'oracle',
+            'tns'            => env('DB_TNS', 'MBP'),
+            'host'           => env('DB_HOST', '192.168.20.135'),
+            'port'           => env('DB_PORT', '1521'),
+            'database'       => env('DB_DATABASE', 'MBPC'),
+            'username'       => env('DB_USERNAME', 'mbpc'),
+            'password'       => env('DB_PASSWORD', 'P3f3MbPc'),
+            'charset'        => env('DB_CHARSET', 'AL32UTF8'),
+            'prefix'         => env('DB_PREFIX', ''),
+            'prefix_schema'  => env('DB_SCHEMA_PREFIX', ''),
+            'edition'        => env('DB_EDITION', 'ora$base'),
+            'server_version' => env('DB_SERVER_VERSION', '11g'),
+        ],
 
     ],
 
