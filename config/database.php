@@ -93,7 +93,7 @@ return [
         
         'oracle' => [
             'driver'         => 'oracle',
-            'tns'            => env('DB_TNS', 'MBP'),
+            'tns'            => env('DB_TNS', 'MBPC'),
             'host'           => env('DB_HOST', '192.168.20.135'),
             'port'           => env('DB_PORT', '1521'),
             'database'       => env('DB_DATABASE', 'MBPC'),

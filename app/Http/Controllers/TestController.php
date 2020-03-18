@@ -7,7 +7,9 @@ use DB;
 class TestController extends Controller
 {
     public function test(){
-        $users=DB::select('select "NRO_OMI" from TBL_VIAJE V order by desc limit 1');
-        var_dump($users);
+        $conn = oci_connect("mbpc", "P3f3MbPc", "192.168.20.135");
+ 		echo $conn;
+ 		 $stdi = oci_parse($conn, "SELECT COUNT(*) FROM TBL_VIAJE");
+    echo oci_execute($stdi);
     }
 }
